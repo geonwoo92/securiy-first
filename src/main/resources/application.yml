@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: rootapp
+  data:
+    mongodb:
+      uri: mongodb://root:root@mongodb-container:27017/mongodb
+  sql:
+    init:
+      mode: always
+      encoding: UTF-8
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: debug
+        type: trace
